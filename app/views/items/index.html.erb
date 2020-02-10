@@ -1,0 +1,12 @@
+
+      <h2>Title Content</h2>
+
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= 'price:'%></td>
+        <td><%=  item.price %></td>
+        <td><%= '$;' %></td>
+        
+      </tr>
+    <% end %>
