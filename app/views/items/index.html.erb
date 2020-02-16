@@ -1,12 +1,7 @@
-
-      <h2>Title Content</h2>
-
-    <% @items.each do |item| %>
-      <tr>
-        <td><%= item.name %></td>
-        <td><%= 'price:'%></td>
-        <td><%=  item.price %></td>
-        <td><%= '$;' %></td>
-        
-      </tr>
-    <% end %>
+<% if current_user %>
+  <h2>Price list</h2>
+  <%= render @items %>
+  <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'login', new_user_session_path %>
+<% end %>

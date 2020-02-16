@@ -1,0 +1,10 @@
+admin
+<%= form_for(@item) do |f| %>
+<div class="field">
+<%= f.text_area :name, placeholder: "Name" %>
+<%= f.text_area :price, placeholder: "price" %>
+<span class="picture">
+<%= f.file_field :picture %>
+</span>
+<%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>

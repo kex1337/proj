@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
- root to: 'pages#home'
- get 'pages/catalog' 
-  devise_for :users
-  resources :items
+ 
+ root to: 'items#index' 
+ get 'admin', to: 'items#admin'
 
+ devise_for :users
+ resources :items
 
 
 

@@ -19,6 +19,14 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
+gem 'activeadmin'
+
+gem 'will_paginate'
+
+gem 'carrierwave'
+gem 'mini_magick'
+
+gem 'bootstrap-sass', '~> 3.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -54,3 +62,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+  

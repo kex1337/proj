@@ -1,0 +1,7 @@
+<%= image_tag item.picture.url if item.picture? %>
+<%= item.name %>
+<%= 'price:'%>
+<%=  item.price %>
+<%= '$;' %>
+<%= will_paginate @items %>
+<p>
